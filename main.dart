@@ -257,19 +257,19 @@ class _weatherState extends State<weather> {
 class WeatherStatus {
   String getWeatherIcon(String condition) {
     //print(condition + "gdrtdycfjycfgjycjffcxhxht");
-    if (condition == 'thunderstorm') {
+    if (condition.toLowerCase().contains("thunderstorm")) {
       return '🌩';
-    } else if (condition == 'rain') {
+    } else if (condition.toLowerCase().contains("rain")) {
       return '🌧';
-    } else if (condition == 'shower rain') {
+    } else if (condition.toLowerCase().contains("shower rain")) {
       return '☔️';
-    } else if (condition == 'snow') {
+    } else if (condition.toLowerCase().contains("snow")) {
       return '☃️';
-    } else if (condition == 'mist') {
+    } else if (condition.toLowerCase().contains("haze")) {
       return '🌫';
-    } else if (condition == 'clear sky') {
+    } else if (condition.toLowerCase().contains("clear sky")) {
       return '☀️';
-    } else if (condition == 'clouds') {
+    } else if (condition.toLowerCase().contains("clouds")) {
       return '☁️';
     } else {
       return ''; //'🤷‍';
@@ -280,19 +280,19 @@ class WeatherStatus {
 class Weather_Status {
   Color getWeatherIcon(String condition) {
     //print(condition + "gdrtdycfjycfgjycjffcxhxht");
-    if (condition == 'thunderstorm') {
+    if (condition.toLowerCase().contains("thunderstorm")) {
       return Colors.deepPurple;
-    } else if (condition == 'rain') {
+    } else if (condition.toLowerCase().contains("rain")) {
       return Colors.blue;
-    } else if (condition == 'shower rain') {
+    } else if (condition.toLowerCase().contains("shower rain")) {
       return Colors.lightBlueAccent;
-    } else if (condition == 'snow') {
+    } else if (condition.toLowerCase().contains("snow")) {
       return Colors.white30;
-    } else if (condition == 'mist') {
+    } else if (condition.toLowerCase().contains("haze")) {
       return Colors.grey;
-    } else if (condition == 'clear sky') {
+    } else if (condition.toLowerCase().contains("clear sky")) {
       return Colors.yellow.shade400;
-    } else if (condition == 'clouds') {
+    } else if (condition.toLowerCase().contains("clouds")) {
       return Colors.black12;
     } else {
       return Colors.blueGrey.shade900; //'🤷‍';
